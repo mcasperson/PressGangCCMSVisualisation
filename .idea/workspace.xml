@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
@@ -11,7 +11,7 @@
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841498943" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856573379" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382855068000" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382858708836" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382858967724" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382857498038" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
@@ -140,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="run.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="684" selection-end="684" vertical-scroll-proportion="0.1056338">
+            <state line="4" column="32" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,10 +167,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="72" selection-start="7670" selection-end="7687" vertical-scroll-proportion="0.0">
+            <state line="192" column="48" selection-start="8369" selection-end="8369" vertical-scroll-proportion="0.6712565">
               <folding />
             </state>
           </provider>
@@ -212,13 +212,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ccvisu/Options.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/TopicDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/CommandLineArgs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/forcepull.sh" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/maven-model-builder-3.0.3.jar!/org/apache/maven/model/pom-4.0.0.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
         <option value="$PROJECT_DIR$/package.sh" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
       </list>
     </option>
   </component>
@@ -693,7 +693,11 @@
       <created>1382858710466</created>
       <updated>1382858710466</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Working on topic database generation">
+      <created>1382858969038</created>
+      <updated>1382858969038</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -843,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="72" selection-start="7670" selection-end="7687" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forcepull.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
@@ -903,7 +900,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="684" selection-end="684" vertical-scroll-proportion="0.1056338">
+        <state line="4" column="32" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="48" selection-start="8369" selection-end="8369" vertical-scroll-proportion="0.6712565">
           <folding />
         </state>
       </provider>

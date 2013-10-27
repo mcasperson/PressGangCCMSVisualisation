@@ -151,6 +151,9 @@ public class GraphGenerator {
     private void buildExtraDataFile(@NotNull final Map<Integer, SpecDetails> specDetailsList,
                                @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
                                @NotNull final RESTTopicCollectionV1 topics) {
+
+        LOGGER.info("Building Topic Database");
+
         final Map<Integer, TopicDetails> integerTopicDetailsMap = new HashMap<Integer, TopicDetails>();
 
         for (final RESTCSNodeCollectionItemV1 contentSpecNode : contentSpecNodes.getItems()) {
@@ -186,6 +189,9 @@ public class GraphGenerator {
     private void buildRsfGraph(@NotNull final Map<Integer, SpecDetails> specDetailsList,
                                @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
                                @NotNull final RESTTopicCollectionV1 topics) {
+
+        LOGGER.info("Building Topic Layout Graph");
+
         for (final RESTCSNodeCollectionItemV1 contentSpecNode : contentSpecNodes.getItems()) {
             if (contentSpecNode.getItem().getNodeType() == RESTCSNodeTypeV1.TOPIC) {
                 if (rsfGraph.length() != 0) {
