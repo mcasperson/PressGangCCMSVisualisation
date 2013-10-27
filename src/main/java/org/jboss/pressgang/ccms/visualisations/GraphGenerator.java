@@ -190,7 +190,7 @@ public class GraphGenerator {
                                @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
                                @NotNull final RESTTopicCollectionV1 topics) {
 
-        LOGGER.info("Building Topic Layout Graph");
+        LOGGER.info("Building Topic Graph");
 
         for (final RESTCSNodeCollectionItemV1 contentSpecNode : contentSpecNodes.getItems()) {
             if (contentSpecNode.getItem().getNodeType() == RESTCSNodeTypeV1.TOPIC) {
@@ -213,6 +213,8 @@ public class GraphGenerator {
      * cut down to work with just the RSF input and LAY output.
      */
     private void buildLayGraph() {
+
+        LOGGER.info("Building Topic Layout Graph");
 
         BufferedReader input = null;
         PrintWriter output = null;

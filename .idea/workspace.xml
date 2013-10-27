@@ -11,7 +11,7 @@
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841498943" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856573379" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382855068000" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382858967724" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382859223532" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382857498038" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
@@ -170,7 +170,7 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="48" selection-start="8369" selection-end="8369" vertical-scroll-proportion="0.6712565">
+            <state line="216" column="43" selection-start="9263" selection-end="9263" vertical-scroll-proportion="0.43889844">
               <folding />
             </state>
           </provider>
@@ -697,7 +697,11 @@
       <created>1382858969038</created>
       <updated>1382858969038</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Working on topic database generation">
+      <created>1382859224889</created>
+      <updated>1382859224889</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +806,9 @@
   <component name="editorHistoryManager">
     <entry file="jar:///usr/java/latest/src.zip!/java/io/PrintWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="41" selection-start="2616" selection-end="2619" vertical-scroll-proportion="-6.52" />
+        <state line="94" column="41" selection-start="2616" selection-end="2619" vertical-scroll-proportion="-6.52">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java">
@@ -907,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="48" selection-start="8369" selection-end="8369" vertical-scroll-proportion="0.6712565">
+        <state line="216" column="43" selection-start="9263" selection-end="9263" vertical-scroll-proportion="0.43889844">
           <folding />
         </state>
       </provider>
