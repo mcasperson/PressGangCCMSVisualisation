@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
@@ -11,7 +11,7 @@
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841498943" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856573379" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382855068000" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382859393778" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382860078759" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382857498038" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
@@ -33,6 +33,7 @@
     <file path="/forcepull.sh" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856899893" ignored="false" />
     <file path="/run.sh" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382858925085" ignored="false" />
     <file path="/package.sh" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382858681551" ignored="false" />
+    <file path="/README.md" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382860271860" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,10 +141,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="run.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0528169">
+            <state line="2" column="1" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="61" selection-start="528" selection-end="528" vertical-scroll-proportion="0.20654045">
               <folding />
             </state>
           </provider>
@@ -176,15 +186,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopicDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/TopicDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -203,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphProcessor.java" />
@@ -219,6 +219,7 @@
         <option value="$PROJECT_DIR$/package.sh" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -705,7 +706,11 @@
       <created>1382859395639</created>
       <updated>1382859395639</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Working on topic database generation">
+      <created>1382860079899</created>
+      <updated>1382860079899</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -808,13 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/java/latest/src.zip!/java/io/PrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="41" selection-start="2616" selection-end="2619" vertical-scroll-proportion="-6.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
@@ -917,7 +915,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0528169">
+        <state line="2" column="1" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="61" selection-start="528" selection-end="528" vertical-scroll-proportion="0.20654045">
           <folding />
         </state>
       </provider>
