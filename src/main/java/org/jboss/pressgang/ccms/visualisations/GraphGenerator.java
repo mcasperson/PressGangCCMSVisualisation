@@ -1,6 +1,8 @@
 package org.jboss.pressgang.ccms.visualisations;
 
 import ccvisu.*;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.ObjectWriter;
 import org.jboss.pressgang.ccms.rest.v1.collections.RESTTopicCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTCSNodeCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.items.RESTCSNodeCollectionItemV1;
@@ -131,11 +133,47 @@ public class GraphGenerator {
             final String query = "query;" + CommonFilterConstants.TOPIC_IS_INCLUDED_IN_SPEC + "=" + contentSpecIDs.toString();
             final RESTTopicCollectionV1 topics = pressgangRest.getJSONTopicsWithQuery(new PathSegmentImpl(query, false), TOPICS_EXPANSION);
 
+            buildExtraDataFile(specDetailsList, contentSpecNodes, topics);
             buildRsfGraph(specDetailsList, contentSpecNodes, topics);
 
 
         } catch (@NotNull final Exception ex) {
             ex.printStackTrace();
+        }
+    }
+
+    /**
+     * Builds a JSON database that includes extra attributes for topics.
+     * @param specDetailsList The collection of spec details
+     * @param contentSpecNodes The collection of spec nodes
+     * @param topics The collection of topics
+     */
+    private void buildExtraDataFile(@NotNull final Map<Integer, SpecDetails> specDetailsList,
+                               @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
+                               @NotNull final RESTTopicCollectionV1 topics) {
+        final Map<Integer, TopicDetails> integerTopicDetailsMap = new HashMap<Integer, TopicDetails>();
+
+        for (final RESTCSNodeCollectionItemV1 contentSpecNode : contentSpecNodes.getItems()) {
+            if (contentSpecNode.getItem().getNodeType() == RESTCSNodeTypeV1.TOPIC) {
+                final Integer specId = contentSpecNode.getItem().getContentSpec().getId();
+                final Integer topicId = contentSpecNode.getItem().getEntityId();
+
+                if (specDetailsList.containsKey(specId)) {
+
+                    if (!integerTopicDetailsMap.containsKey(topicId)) {
+                        integerTopicDetailsMap.put(topicId, new TopicDetails());
+                    }
+
+                    integerTopicDetailsMap.get(topicId).getProducts().add(specDetailsList.get(specId).getProduct());
+                }
+            }
+        }
+
+        final ObjectWriter writer = new ObjectMapper().writer();
+        try {
+            writer.writeValue(new File("topicDatabase.json"), integerTopicDetailsMap);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -188,7 +226,32 @@ public class GraphGenerator {
             // Use 100 iterations
             options.nrIterations = 100;
 
-            options.vertRepu = true;
+            /*
+                The table below shows the various settings that can be applied to the CCVisu options
+                object to emulate some common energy models. (http://ccvisu.sosy-lab.org/manual/main.html#htoc26)
+
+                Energy model	                attrExponent a (1)   repuExponent r (0)	vertRepu e (false)
+                Fruchterman Reingold	        3	                0	                0
+                Vertex-repulsion LinLog	        1	                0	                0
+                Edge-repulsion LinLog	        1	                0	                1
+                Weighted edge-repulsion LinLog	1	                0	                1
+            */
+
+            // Fruchterman Reingold
+            options.attrExponent = 3;
+            options.repuExponent = 0;
+            options.vertRepu = false;
+
+            // Vertex-repulsion LinLog
+            /*options.attrExponent = 1;
+            options.repuExponent = 0;
+            options.vertRepu = false;*/
+
+            // Edge-repulsion LinLog
+            /*options.attrExponent = 1;
+            options.repuExponent = 0;
+            options.vertRepu = true;*/
+
 
             final ReaderData graphReader = new ReaderDataGraphRSF(input, options.verbosity);
             graphReader.read(options.graph);

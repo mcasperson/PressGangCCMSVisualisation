@@ -324,9 +324,9 @@ public class Options {
   // For energy model.
   /* Exponent of the Euclidian distance in the attraction 
    * term of the energy (default: 1). */
-  float              attrExponent  = 1.0f;
+  public float              attrExponent  = 1.0f;
   // Exponent of the Euclidian distance in the repulsion term of the energy (default: 0).
-  float              repuExponent  = 0.0f;
+  public float              repuExponent  = 0.0f;
   /* Use vertex repulsion instead of edge repulsion,
    *   true for vertex repulsion, false for edge repulsion
    *   (default: edge repulsion). */
