@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jboss.pressgang.ccms:pressgang-ccms-zanata:1.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-zanata/1.3-SNAPSHOT/pressgang-ccms-zanata-1.3-20131017.234740-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-zanata/1.3-SNAPSHOT/pressgang-ccms-zanata-1.3-20131017.234740-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-zanata/1.3-SNAPSHOT/pressgang-ccms-zanata-1.3-20131017.234740-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
