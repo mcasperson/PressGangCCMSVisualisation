@@ -12,27 +12,42 @@ import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.RESTCSNodeV1;
 import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.RESTContentSpecV1;
 import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.enums.RESTCSNodeTypeV1;
 import org.jboss.pressgang.ccms.rest.v1.jaxrsinterfaces.RESTBaseInterfaceV1;
+import org.jboss.pressgang.ccms.visualisations.logging.Logged;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jboss.resteasy.specimpl.PathSegmentImpl;
 import org.jetbrains.annotations.NotNull;
 
+import javax.inject.Inject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import java.util.*;
+import java.util.logging.Logger;
 
 /**
  * This class polls the PressGang REST endpoint for information on topics and content specs. It then
  * generates various graphs that will then be further processed.
  */
+@Logged
 public class GraphGenerator {
+    /**
+     * The logger
+     */
+    private static final Logger LOGGER = Logger.getLogger(GraphGenerator.class.getName());
+
     /**
      * The required expansion details for the content specs.
      */
     private static final String CONTENT_SPEC_EXPANSION =
             "{\"branches\":[{\"trunk\":{\"name\": \"" + RESTv1Constants.CONTENT_SPEC_EXPANSION_NAME + "\"}}]}";
+
+    /**
+     * The required expansion details for the content specs.
+     */
+    private static final String TOPICS_EXPANSION =
+            "{\"branches\":[{\"trunk\":{\"name\": \"" + RESTv1Constants.TOPICS_EXPANSION_NAME + "\"}}]}";
 
     /**
      * The required expansion details for the content spec node.
@@ -63,12 +78,30 @@ public class GraphGenerator {
      */
     private String delimitedGraph;
 
-    public GraphGenerator(@NotNull final CommandLineArgs commandLineArgs) {
+    /**
+     * The parsed command line args
+     */
+    @Inject
+    private CommandLineArgs commandLineArgs;
+
+
+    public GraphGenerator() {
+
+    }
+
+    /**
+     * Gets the data from the server and builds the various graphs supported by this application.
+     */
+    public void generateGraphs() {
+        LOGGER.info("Constructing RESTEasy Client");
+
         final ResteasyClient client = new ResteasyClientBuilder().build();
         final ResteasyWebTarget target = client.target(commandLineArgs.pressgangServer);
         final RESTBaseInterfaceV1 pressgangRest = target.proxy(RESTBaseInterfaceV1.class);
 
         try {
+            LOGGER.info("Getting Content Spec Nodes");
+
             // get a list of the specs references by the spec nodes, and create a database of the spec
             // details like product, title and version
             final Map<Integer, SpecDetails> specDetailsList = new HashMap<Integer, SpecDetails>();
@@ -101,8 +134,10 @@ public class GraphGenerator {
                 }
             }
 
+            LOGGER.info("Getting Topics");
+
             final String query = "query;" + CommonFilterConstants.TOPIC_IS_INCLUDED_IN_SPEC + "=" + contentSpecIDs.toString();
-            final RESTTopicCollectionV1 topics = pressgangRest.getJSONTopicsWithQuery(new PathSegmentImpl(query, false), "{\"branches\":[" + RESTv1Constants.TOPICS_EXPANSION_NAME + "]}");
+            final RESTTopicCollectionV1 topics = pressgangRest.getJSONTopicsWithQuery(new PathSegmentImpl(query, false), TOPICS_EXPANSION);
 
             buildRsfGraph(specDetailsList, contentSpecNodes, topics);
 
@@ -112,6 +147,12 @@ public class GraphGenerator {
         }
     }
 
+    /**
+     * Builds a CCVisu RSF graph.
+     * @param specDetailsList The collection of spec details
+     * @param contentSpecNodes The collection of spec nodes
+     * @param topics The collection of topics
+     */
     private void buildRsfGraph(@NotNull final Map<Integer, SpecDetails> specDetailsList,
                                @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
                                @NotNull final RESTTopicCollectionV1 topics) {
