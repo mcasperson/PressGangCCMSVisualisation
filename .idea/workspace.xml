@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/.cvsignore" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/.cvsignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/FrameDisplay.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/FrameDisplay.java" />
@@ -38,7 +39,7 @@
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834559834" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382830508315" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382831094504" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382835054119" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382835110755" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834854342" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -154,15 +155,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RESTContentSpecCollectionV1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-restv1/1.3-SNAPSHOT/pressgang-ccms-restv1-1.3-20131022.085720-3-sources.jar!/org/jboss/pressgang/ccms/rest/v1/collections/contentspec/RESTContentSpecCollectionV1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="87" selection-start="452" selection-end="469" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -181,15 +173,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.33203885">
+            <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3558#3580#0" expanded="true" />
                 <element signature="e#3639#3648#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="26" selection-start="53" selection-end="53" vertical-scroll-proportion="0.029126214">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -240,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -637,7 +639,11 @@
       <created>1382835064027</created>
       <updated>1382835064027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Import">
+      <created>1382835113118</created>
+      <updated>1382835113118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -662,7 +668,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.600639" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.600639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -737,13 +743,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-jaxrs/2.3.5.Final/resteasy-jaxrs-2.3.5.Final.jar!/org/jboss/resteasy/specimpl/PathSegmentImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-restv1/1.3-SNAPSHOT/pressgang-ccms-restv1-1.3-20131022.085720-3-sources.jar!/org/jboss/pressgang/ccms/rest/v1/constants/RESTv1Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="31" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.0">
@@ -846,12 +845,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.33203885">
+        <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3558#3580#0" expanded="true" />
             <element signature="e#3639#3648#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="53" selection-end="53" vertical-scroll-proportion="0.029126214">
+          <folding />
         </state>
       </provider>
     </entry>
