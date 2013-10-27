@@ -171,7 +171,7 @@ public class GraphGenerator {
 
         final ObjectWriter writer = new ObjectMapper().writer();
         try {
-            writer.writeValue(new File("topicDatabase.json"), integerTopicDetailsMap);
+            writer.writeValue(new File(commandLineArgs.topicDatabaseFile), integerTopicDetailsMap);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -213,7 +213,7 @@ public class GraphGenerator {
 
         try {
             input = new BufferedReader(new StringReader(getRsfGraph().toString()));
-            output = new PrintWriter(new BufferedWriter(new FileWriter("topics.lay")));
+            output = new PrintWriter(new BufferedWriter(new FileWriter(commandLineArgs.topicGraphFile)));
 
             final Options options = new Options();
 
