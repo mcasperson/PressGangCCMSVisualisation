@@ -175,9 +175,7 @@ public class GraphGenerator {
 
         try {
             input = new BufferedReader(new StringReader(getRsfGraph().toString()));
-
-            final StringWriter outputWriter = new StringWriter();
-            output = new PrintWriter(outputWriter);
+            output = new PrintWriter(new BufferedWriter(new FileWriter("topics.lay")));
 
             final Options options = new Options();
 
@@ -233,8 +231,8 @@ public class GraphGenerator {
 
             // Close the output file.
             output.flush();
-
-            layGraph.append(outputWriter.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             // Close the input file.
             try {
@@ -243,7 +241,13 @@ public class GraphGenerator {
                 System.err.println("Exception while closing input file: ");
                 System.err.println(e);
             }
-            output.close();
+
+            try {
+                output.close();
+            } catch (Exception e) {
+                System.err.println("Exception while closing output file: ");
+                System.err.println(e);
+            }
         }
 
     }
