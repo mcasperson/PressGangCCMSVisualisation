@@ -330,7 +330,7 @@ public class Options {
   /* Use vertex repulsion instead of edge repulsion,
    *   true for vertex repulsion, false for edge repulsion
    *   (default: edge repulsion). */
-  boolean            vertRepu      = false;
+  public boolean            vertRepu      = false;
   /* Use unweighted model by ignoring the edge weights,
    *   true for unweighted, false for weighted (default: weighted). */
   boolean            noWeight      = false;

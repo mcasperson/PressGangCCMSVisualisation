@@ -188,6 +188,8 @@ public class GraphGenerator {
             // Use 100 iterations
             options.nrIterations = 100;
 
+            options.vertRepu = true;
+
             final ReaderData graphReader = new ReaderDataGraphRSF(input, options.verbosity);
             graphReader.read(options.graph);
 
