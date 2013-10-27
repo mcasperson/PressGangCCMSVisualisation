@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/.cvsignore" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/.cvsignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/FrameDisplay.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/FrameDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/FrameGUI.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/FrameGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/FrameGroup.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/FrameGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/GraphData.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/GraphData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEdge.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEdge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEvent.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEventListener.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/GraphEventListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/GraphVertex.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/GraphVertex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/Group.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/Marker.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/Marker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/MarkerScript.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/MarkerScript.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/Minimizer.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/Minimizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/MinimizerBarnesHut.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/MinimizerBarnesHut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderData.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraph.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraphCVS.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraphCVS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraphRSF.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataGraphRSF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataLAY.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderDataLAY.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderWriterGroup.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/ReaderWriterGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterData.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphics.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsDISP.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsDISP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsSVG.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsSVG.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsVRML.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsVRML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataLAY.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataLAY.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataRSF.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/WriterDataRSF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,6 +13,7 @@
     <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382835158074" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834854342" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382835279145" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
+            <state line="77" column="0" selection-start="3854" selection-end="3854" vertical-scroll-proportion="0.33203885">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3558#3580#0" expanded="true" />
@@ -185,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="53" selection-end="53" vertical-scroll-proportion="0.029126214">
+            <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -671,7 +644,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.600639" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.600639" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -846,21 +819,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3722" selection-end="3722" vertical-scroll-proportion="0.0">
+        <state line="77" column="0" selection-start="3854" selection-end="3854" vertical-scroll-proportion="0.33203885">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3558#3580#0" expanded="true" />
             <element signature="e#3639#3648#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="53" selection-end="53" vertical-scroll-proportion="0.029126214">
-          <folding />
         </state>
       </provider>
     </entry>
