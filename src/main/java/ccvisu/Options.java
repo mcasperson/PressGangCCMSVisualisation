@@ -319,7 +319,7 @@ public class Options {
   public int         nrIterations  = 100;
   String             initialLayStr = "";
   public GraphData   initialLayout = null;
-  boolean            fixedInitPos  = false;
+  public boolean            fixedInitPos  = false;
 
   // For energy model.
   /* Exponent of the Euclidian distance in the attraction 

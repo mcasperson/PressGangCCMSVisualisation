@@ -2,31 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_weld_weld_se_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_5_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/CommandLineArgs.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/CommandLineArgs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PressGangCCMSVisualisation.iml" afterPath="$PROJECT_DIR$/PressGangCCMSVisualisation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccvisu/Options.java" afterPath="$PROJECT_DIR$/src/main/java/ccvisu/Options.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836943653" ignored="false" />
+    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841091840" ignored="false" />
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836312715" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382830508315" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382838171738" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382835283083" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382838229238" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382837045327" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
     <file path="/beans.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836803501" ignored="false" />
-    <file path="/LoggedInterceptor.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382837603855" ignored="false" />
+    <file path="/LoggedInterceptor.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382838435147" ignored="false" />
+    <file path="/GraphProcessor.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382840123385" ignored="false" />
+    <file path="/Options.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841231072" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,21 +88,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" line="97" class="org.jboss.pressgang.ccms.visualisations.GraphGenerator" package="org.jboss.pressgang.ccms.visualisations">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -128,46 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandLineArgs.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/CommandLineArgs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="10" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggedInterceptor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="61" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleLogger.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8-sources.jar!/org/slf4j/impl/SimpleLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="37" selection-start="6312" selection-end="6328" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageFormatter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4-sources.jar!/org/slf4j/helpers/MessageFormatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="19" selection-start="3686" selection-end="3724" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,40 +119,31 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="3826" selection-end="3826" vertical-scroll-proportion="0.33203885">
+            <state line="215" column="36" selection-start="9318" selection-end="9330" vertical-scroll-proportion="0.2835821">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4383#4405#0" expanded="true" />
-                <element signature="e#4464#4473#0" expanded="true" />
+                <element signature="e#4604#4626#0" expanded="true" />
+                <element signature="e#4685#4694#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeldBootstrap.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/weld/weld-se/1.0.1-Final/weld-se-1.0.1-Final.jar!/org/jboss/weld/bootstrap/WeldBootstrap.class">
+      <file leaf-file-name="CCVisu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="3563" selection-end="3563" vertical-scroll-proportion="-15.48">
+            <state line="333" column="4" selection-start="12293" selection-end="12419" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/java/latest/src.zip!/java/lang/Class.java">
+      <file leaf-file-name="Options.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/Options.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="373" column="0" selection-start="14526" selection-end="14526" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logged.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+            <state line="321" column="9" selection-start="9674" selection-end="9674" vertical-scroll-proportion="-7.68">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#9206#9214#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -245,10 +175,13 @@
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/CommandLineArgs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphProcessor.java" />
+        <option value="/usr/java/latest/src.zip!/java/io/PrintWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ccvisu/Options.java" />
       </list>
     </option>
   </component>
@@ -400,36 +333,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visualisations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PressGangCCMSVisualisation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PressGangCCMSVisualisation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -457,7 +360,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Maven.Package">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -696,7 +599,11 @@
       <created>1382835286760</created>
       <updated>1382835286760</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge branch 'master' of github.com:mcasperson/PressGangCCMSVisualisation&#10;&#10;Conflicts:&#10;&#9;README.md&#10;">
+      <created>1382838235250</created>
+      <updated>1382838235251</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -708,7 +615,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -721,8 +628,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.600639" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -797,36 +704,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-restv1/1.3-SNAPSHOT/pressgang-ccms-restv1-1.3-20131022.085720-3-sources.jar!/org/jboss/pressgang/ccms/rest/v1/constants/RESTv1Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/latest/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="12" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/SpecDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="704" selection-end="719" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="80" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="18" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
@@ -878,15 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="465" selection-end="804" vertical-scroll-proportion="0.0">
@@ -903,6 +771,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
@@ -910,13 +787,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/WriterDataGraphicsDISP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="9" selection-start="2893" selection-end="2893" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="333" column="4" selection-start="12293" selection-end="12419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/latest/src.zip!/java/io/PrintWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="41" selection-start="2616" selection-end="2619" vertical-scroll-proportion="-6.52">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/Options.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="321" column="9" selection-start="9674" selection-end="9674" vertical-scroll-proportion="-7.68">
+          <folding>
+            <element signature="e#9206#9214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="3826" selection-end="3826" vertical-scroll-proportion="0.33203885">
+        <state line="215" column="36" selection-start="9318" selection-end="9330" vertical-scroll-proportion="0.2835821">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4383#4405#0" expanded="true" />
-            <element signature="e#4464#4473#0" expanded="true" />
+            <element signature="e#4604#4626#0" expanded="true" />
+            <element signature="e#4685#4694#0" expanded="true" />
           </folding>
         </state>
       </provider>

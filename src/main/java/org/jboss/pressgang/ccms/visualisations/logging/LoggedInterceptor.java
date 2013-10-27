@@ -25,6 +25,12 @@ public class LoggedInterceptor implements Serializable{
                 + invocationContext.getMethod().getName() + " in class "
                 + invocationContext.getMethod().getDeclaringClass().getName());
 
-        return invocationContext.proceed();
+        final Object retValue = invocationContext.proceed();
+
+        LOGGER.info("Exiting method: "
+                + invocationContext.getMethod().getName() + " in class "
+                + invocationContext.getMethod().getDeclaringClass().getName());
+
+        return retValue;
     }
 }

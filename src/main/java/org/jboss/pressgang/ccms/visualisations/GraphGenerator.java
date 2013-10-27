@@ -1,5 +1,6 @@
 package org.jboss.pressgang.ccms.visualisations;
 
+import ccvisu.*;
 import org.jboss.pressgang.ccms.rest.v1.collections.RESTTopicCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTCSNodeCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTContentSpecCollectionV1;
@@ -23,6 +24,8 @@ import javax.inject.Inject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
+import java.awt.*;
+import java.io.*;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -30,7 +33,6 @@ import java.util.logging.Logger;
  * This class polls the PressGang REST endpoint for information on topics and content specs. It then
  * generates various graphs that will then be further processed.
  */
-@Logged
 public class GraphGenerator {
     /**
      * The logger
@@ -68,6 +70,10 @@ public class GraphGenerator {
      * A graph in the RSF format (http://ccvisu.sosy-lab.org/manual/main.html#sec:input-rsf) used by CCVisu.
      */
     private final StringBuilder rsfGraph = new StringBuilder();
+    /**
+     * A graph in the LAY format (http://ccvisu.sosy-lab.org/manual/main.html) used by CCVisu.
+     */
+    private final StringBuilder layGraph = new StringBuilder();
     /**
      * A graph in the SIF format (http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats#SIF_Format) used by
      * Cytoscape.
@@ -170,8 +176,87 @@ public class GraphGenerator {
         }
     }
 
+    /**
+     * Create a LAY file from the RSF file. This is a copy of the CCVisu.process() method,
+     * cut down to work with just the RSF input and LAY output.
+     */
+    private String buildLayGraph() {
+
+        BufferedReader input = null;
+        PrintWriter output = null;
+
+        try {
+            input = new BufferedReader(new StringReader(rsfGraph.toString()));
+            output = new PrintWriter(new StringWriter());
+
+            final Options options = new Options();
+
+            // Create a frame for drawing the layout.
+            options.frame = new Frame();
+            // Initialize the graph representation.
+            options.graph = new GraphData();
+
+            final ReaderData graphReader = new ReaderDataGraphRSF(input, options.verbosity);
+            graphReader.read(options.graph);
+
+            // Handle vertex options.
+            for (GraphVertex curVertex : options.graph.vertices) {
+                // annotAll (annotate each vertex with its name).
+                if (Options.Option.annotAll.getBool()) {
+                    curVertex.showName = true;
+                }
+                // annotNone (annotate no vertex).
+                if (Options.Option.annotNone.getBool()) {
+                    curVertex.showName = false;
+                }
+            }
+
+            // lVertex.fixedPos == true means that the minimizer does not change
+            //   lVertex's position.
+            if (options.fixedInitPos && options.initialLayout != null) {
+                for (GraphVertex lCurrVertex : options.graph.vertices) {
+                    // If the current vertex exists in the read initial layout,
+                    // then mark its position as fixed.
+                    if (options.initialLayout.nameToVertex.containsKey(lCurrVertex.name)) {
+                        lCurrVertex.fixedPos = true;
+                    }
+                }
+            }
+
+            // Initialize layout.
+            CCVisu.initializeLayout(options);
+            // Set minimizer algorithm.
+            // So far there is only one implemented in CCVisu.
+            final Minimizer minimizer = new MinimizerBarnesHut(options);
+            // Compute layout for given graph.
+            minimizer.minimizeEnergy();
+
+            // Output writer.
+            final WriterData dataWriter = new WriterDataLAY(output, options.graph);
+
+            // Write the data using the writer.
+            dataWriter.write();
+
+            // Close the output file.
+            output.flush();
+
+            return output.toString();
+        } finally {
+            // Close the input file.
+            try {
+                input.close();
+            } catch (Exception e) {
+                System.err.println("Exception while closing input file: ");
+                System.err.println(e);
+            }
+            output.close();
+        }
+
+    }
+
     private void buildDelimitedGraph(@NotNull final RESTCSNodeCollectionV1 contentSpecNodes, @NotNull final RESTTopicCollectionV1 topics) {
 
     }
+
 
 }
