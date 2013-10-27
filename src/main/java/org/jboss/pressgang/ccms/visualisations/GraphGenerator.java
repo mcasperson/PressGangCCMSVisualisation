@@ -225,8 +225,6 @@ public class GraphGenerator {
 
             final Options options = new Options();
 
-            // Create a frame for drawing the layout.
-            options.frame = new Frame();
             // Initialize the graph representation.
             options.graph = new GraphData();
             // The output should be in three dimensions
