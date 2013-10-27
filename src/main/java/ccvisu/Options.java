@@ -313,7 +313,7 @@ public class Options {
   boolean            sliding       = false;
 
   // For layout.
-  int                nrDim         = 2;
+  public int                nrDim         = 2;
   /* Number of iterations of the minimizer.
    * Choose appropriate values by observing the convergence of energy. */
   public int         nrIterations  = 100;

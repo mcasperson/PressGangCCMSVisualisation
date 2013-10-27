@@ -27,5 +27,7 @@ public class Main {
         new JCommander(commandLineArgs, args);
 
         graphGenerator.generateGraphs();
+
+        System.out.print(graphGenerator.getLayGraph());
     }
 }

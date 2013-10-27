@@ -3,17 +3,12 @@ package org.jboss.pressgang.ccms.visualisations;
 import ccvisu.*;
 import org.jboss.pressgang.ccms.rest.v1.collections.RESTTopicCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTCSNodeCollectionV1;
-import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTContentSpecCollectionV1;
-import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.RESTTextContentSpecCollectionV1;
 import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.items.RESTCSNodeCollectionItemV1;
-import org.jboss.pressgang.ccms.rest.v1.collections.contentspec.items.RESTContentSpecCollectionItemV1;
 import org.jboss.pressgang.ccms.rest.v1.constants.CommonFilterConstants;
 import org.jboss.pressgang.ccms.rest.v1.constants.RESTv1Constants;
 import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.RESTCSNodeV1;
-import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.RESTContentSpecV1;
 import org.jboss.pressgang.ccms.rest.v1.entities.contentspec.enums.RESTCSNodeTypeV1;
 import org.jboss.pressgang.ccms.rest.v1.jaxrsinterfaces.RESTBaseInterfaceV1;
-import org.jboss.pressgang.ccms.visualisations.logging.Logged;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
@@ -21,9 +16,6 @@ import org.jboss.resteasy.specimpl.PathSegmentImpl;
 import org.jetbrains.annotations.NotNull;
 
 import javax.inject.Inject;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
 import java.awt.*;
 import java.io.*;
 import java.util.*;
@@ -66,13 +58,7 @@ public class GraphGenerator {
      */
     private static final String RSF_GRAPH_NAME = "PRESSGANG";
 
-    /**
-     * A graph in the RSF format (http://ccvisu.sosy-lab.org/manual/main.html#sec:input-rsf) used by CCVisu.
-     */
     private final StringBuilder rsfGraph = new StringBuilder();
-    /**
-     * A graph in the LAY format (http://ccvisu.sosy-lab.org/manual/main.html) used by CCVisu.
-     */
     private final StringBuilder layGraph = new StringBuilder();
     /**
      * A graph in the SIF format (http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats#SIF_Format) used by
@@ -174,20 +160,24 @@ public class GraphGenerator {
                 rsfGraph.append(RSF_GRAPH_NAME + " " + specDetailsList.get(specId).getFixedProduct() + " " + topicId + " 1.0");
             }
         }
+
+        buildLayGraph();
     }
 
     /**
      * Create a LAY file from the RSF file. This is a copy of the CCVisu.process() method,
      * cut down to work with just the RSF input and LAY output.
      */
-    private String buildLayGraph() {
+    private void buildLayGraph() {
 
         BufferedReader input = null;
         PrintWriter output = null;
 
         try {
-            input = new BufferedReader(new StringReader(rsfGraph.toString()));
-            output = new PrintWriter(new StringWriter());
+            input = new BufferedReader(new StringReader(getRsfGraph().toString()));
+
+            final StringWriter outputWriter = new StringWriter();
+            output = new PrintWriter(outputWriter);
 
             final Options options = new Options();
 
@@ -195,6 +185,10 @@ public class GraphGenerator {
             options.frame = new Frame();
             // Initialize the graph representation.
             options.graph = new GraphData();
+            // The output should be in three dimensions
+            options.nrDim = 3;
+            // Use 100 iterations
+            options.nrIterations = 100;
 
             final ReaderData graphReader = new ReaderDataGraphRSF(input, options.verbosity);
             graphReader.read(options.graph);
@@ -240,7 +234,7 @@ public class GraphGenerator {
             // Close the output file.
             output.flush();
 
-            return output.toString();
+            layGraph.append(outputWriter.toString());
         } finally {
             // Close the input file.
             try {
@@ -259,4 +253,19 @@ public class GraphGenerator {
     }
 
 
+    /**
+     * A graph in the RSF format (http://ccvisu.sosy-lab.org/manual/main.html#sec:input-rsf) used by CCVisu.
+     */
+    @NotNull
+    public String getRsfGraph() {
+        return rsfGraph.toString();
+    }
+
+    /**
+     * A graph in the LAY format (http://ccvisu.sosy-lab.org/manual/main.html) used by CCVisu.
+     */
+    @NotNull
+    public String getLayGraph() {
+        return layGraph.toString();
+    }
 }
