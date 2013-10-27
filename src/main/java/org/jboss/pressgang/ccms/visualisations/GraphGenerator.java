@@ -174,7 +174,21 @@ public class GraphGenerator {
 
         final ObjectWriter writer = new ObjectMapper().writer();
         try {
-            writer.writeValue(new File(commandLineArgs.topicDatabaseFile), integerTopicDetailsMap);
+            final StringWriter stringWriter = new StringWriter();
+            writer.writeValue(stringWriter, integerTopicDetailsMap);
+
+            final StringBuilder jsonDatabase = new StringBuilder();
+            jsonDatabase.append("topicDatabase = ");
+            jsonDatabase.append(stringWriter.toString());
+
+            FileWriter output = null;
+            try {
+                output = new FileWriter(commandLineArgs.topicDatabaseFile);
+                output.write(jsonDatabase.toString());
+            } finally {
+                output.close();
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
