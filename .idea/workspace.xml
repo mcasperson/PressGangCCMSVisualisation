@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
@@ -7,11 +10,11 @@
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634626893" ignored="false" />
+    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383635487832" ignored="false" />
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841498943" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856573379" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382855068000" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634492203" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634636056" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382857498038" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
@@ -103,24 +106,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logged.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/Logged.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggedInterceptor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/logging/LoggedInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="28" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="forcepull.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forcepull.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,7 +145,16 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="17" selection-start="14040" selection-end="14040" vertical-scroll-proportion="0.76283985">
+            <state line="354" column="102" selection-start="14724" selection-end="14724" vertical-scroll-proportion="0.29069766">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/sf/opencsv/opencsv/2.3/opencsv-2.3-sources.jar!/au/com/bytecode/opencsv/CSVWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="47" selection-start="1715" selection-end="1733" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -600,6 +594,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -715,7 +714,11 @@
       <created>1383634493336</created>
       <updated>1383634493336</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added the ability to create a csv file with topic graph info">
+      <created>1383634637065</created>
+      <updated>1383634637065</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,6 +728,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -740,13 +744,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6713881" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.60056657" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39943343" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -819,16 +822,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ccvisu/CCVisu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="24" selection-start="2687" selection-end="2699" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/SpecDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/TopicDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="49" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" />
@@ -912,9 +905,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar!/au/com/bytecode/opencsv/CSVWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="11" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/opencsv/opencsv/2.3/opencsv-2.3-sources.jar!/au/com/bytecode/opencsv/CSVWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="47" selection-start="1715" selection-end="1733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="17" selection-start="14040" selection-end="14040" vertical-scroll-proportion="0.76283985">
+        <state line="354" column="102" selection-start="14724" selection-end="14724" vertical-scroll-proportion="0.29069766">
           <folding />
         </state>
       </provider>

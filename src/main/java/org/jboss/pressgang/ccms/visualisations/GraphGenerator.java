@@ -352,7 +352,7 @@ public class GraphGenerator {
 
         @Nullable CSVWriter writer = null;
         try {
-            writer = new CSVWriter(new FileWriter("topicgraph.csv"), ',');
+            writer = new CSVWriter(new FileWriter("topicgraph.csv"), ',', CSVWriter.NO_QUOTE_CHARACTER);
 
             // feed in your array (or convert your data to an array)
             final String[] entries = "first#second#third".split("#");
