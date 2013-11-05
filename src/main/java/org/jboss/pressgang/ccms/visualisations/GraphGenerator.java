@@ -358,7 +358,7 @@ public class GraphGenerator {
                     final Integer specId = contentSpecNode.getItem().getContentSpec().getId();
                     final Integer topicId = contentSpecNode.getItem().getEntityId();
 
-                    writer.writeNext(new String[] {specDetailsList.get(specId).getFixedProduct(), topicId.toString()});
+                    writer.writeNext(new String[] {specDetailsList.get(specId).getFixedProduct(), "Includes", topicId.toString()});
                 }
             }
         } catch (final IOException ex) {
