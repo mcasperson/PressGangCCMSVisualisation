@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.jboss.pressgang.ccms:pressgang-ccms-utils:1.3-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131017.234633-1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131105.041838-2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131017.234633-1-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131105.041838-2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131017.234633-1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/pressgang/ccms/pressgang-ccms-utils/1.3-SNAPSHOT/pressgang-ccms-utils-1.3-20131105.041838-2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

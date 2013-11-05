@@ -1,5 +1,6 @@
 package org.jboss.pressgang.ccms.visualisations;
 
+import au.com.bytecode.opencsv.CSVWriter;
 import ccvisu.*;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.ObjectWriter;
@@ -135,6 +136,7 @@ public class GraphGenerator {
 
             buildExtraDataFile(specDetailsList, contentSpecNodes, topics);
             buildRsfGraph(specDetailsList, contentSpecNodes, topics);
+            buildDelimitedGraph(specDetailsList, contentSpecNodes, topics);
 
 
         } catch (@NotNull final Exception ex) {
@@ -337,7 +339,40 @@ public class GraphGenerator {
 
     }
 
-    private void buildDelimitedGraph(@NotNull final RESTCSNodeCollectionV1 contentSpecNodes, @NotNull final RESTTopicCollectionV1 topics) {
+    private void buildDelimitedGraph(@NotNull final Map<Integer, SpecDetails> specDetailsList,
+                                     @NotNull final RESTCSNodeCollectionV1 contentSpecNodes,
+                                     @NotNull final RESTTopicCollectionV1 topics) {
+
+        LOGGER.info("Building Delimited Graph");
+
+        CSVWriter writer = null;
+        try {
+            writer = new CSVWriter(new FileWriter("topicgraph.csv"), ',');
+
+            // feed in your array (or convert your data to an array)
+            final String[] entries = "first#second#third".split("#");
+
+            for (final RESTCSNodeCollectionItemV1 contentSpecNode : contentSpecNodes.getItems()) {
+                if (contentSpecNode.getItem().getNodeType() == RESTCSNodeTypeV1.TOPIC) {
+
+                    final Integer specId = contentSpecNode.getItem().getContentSpec().getId();
+                    final Integer topicId = contentSpecNode.getItem().getEntityId();
+
+                    writer.writeNext(new String[] {specDetailsList.get(specId).getFixedProduct(), topicId.toString()});
+                }
+            }
+        } catch (final IOException ex) {
+
+        }  finally {
+            try {
+                if (writer != null) {
+                    writer.close();
+                }
+            } catch (final IOException ex) {
+
+            }
+        }
+
 
     }
 
