@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bde0418-c856-4300-bde2-52d98d043367" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PressGangCCMSVisualisation.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634324488" ignored="false" />
+    <file path="/GraphGenerator.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634626893" ignored="false" />
     <file path="/Main.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382841498943" ignored="false" />
     <file path="/pom.xml" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382856573379" ignored="false" />
     <file path="/CommandLineArgs.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382855068000" ignored="false" />
-    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634426435" ignored="false" />
+    <file path="/Dummy.txt" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1383634492203" ignored="false" />
     <file path="/SpecDetails.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382834314300" ignored="false" />
     <file path="/fragment.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382857498038" ignored="false" />
     <file path="/Logged.java" changelist="8bde0418-c856-4300-bde2-52d98d043367" time="1382836758437" ignored="false" />
@@ -130,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="run.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="46" selection-start="731" selection-end="731" vertical-scroll-proportion="0.1155624">
+            <state line="5" column="46" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,10 +157,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="349" column="65" selection-start="14430" selection-end="14444" vertical-scroll-proportion="0.0">
+            <state line="337" column="17" selection-start="14040" selection-end="14040" vertical-scroll-proportion="0.76283985">
               <folding />
             </state>
           </provider>
@@ -216,8 +216,8 @@
         <option value="$PROJECT_DIR$/package.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java" />
       </list>
     </option>
   </component>
@@ -711,7 +711,11 @@
       <created>1383634427434</created>
       <updated>1383634427434</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added the ability to create a csv file with topic graph info">
+      <created>1383634493336</created>
+      <updated>1383634493336</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -901,16 +905,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
+    <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="65" selection-start="14430" selection-end="14444" vertical-scroll-proportion="0.0">
+        <state line="5" column="46" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.sh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jboss/pressgang/ccms/visualisations/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="731" selection-end="731" vertical-scroll-proportion="0.1155624">
+        <state line="337" column="17" selection-start="14040" selection-end="14040" vertical-scroll-proportion="0.76283985">
           <folding />
         </state>
       </provider>

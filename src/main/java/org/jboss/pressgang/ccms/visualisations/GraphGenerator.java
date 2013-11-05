@@ -17,6 +17,7 @@ import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jboss.resteasy.specimpl.PathSegmentImpl;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.inject.Inject;
 import java.awt.*;
@@ -232,8 +233,8 @@ public class GraphGenerator {
 
         LOGGER.info("Building Topic Layout Graph");
 
-        BufferedReader input = null;
-        PrintWriter output = null;
+        @Nullable BufferedReader input = null;
+        @Nullable PrintWriter output = null;
 
         try {
             input = new BufferedReader(new StringReader(getRsfGraph().toString()));
@@ -318,22 +319,26 @@ public class GraphGenerator {
 
             // Close the output file.
             output.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (@NotNull final IOException ex) {
+            ex.printStackTrace();
         } finally {
             // Close the input file.
             try {
-                input.close();
-            } catch (Exception e) {
+                if (input != null) {
+                    input.close();
+                }
+            } catch (@NotNull final Exception ex) {
                 System.err.println("Exception while closing input file: ");
-                System.err.println(e);
+                System.err.println(ex);
             }
 
             try {
-                output.close();
-            } catch (Exception e) {
+                if (output != null) {
+                    output.close();
+                }
+            } catch (@NotNull final Exception ex) {
                 System.err.println("Exception while closing output file: ");
-                System.err.println(e);
+                System.err.println(ex);
             }
         }
 
@@ -345,7 +350,7 @@ public class GraphGenerator {
 
         LOGGER.info("Building Delimited Graph");
 
-        CSVWriter writer = null;
+        @Nullable CSVWriter writer = null;
         try {
             writer = new CSVWriter(new FileWriter("topicgraph.csv"), ',');
 
@@ -361,14 +366,14 @@ public class GraphGenerator {
                     writer.writeNext(new String[] {specDetailsList.get(specId).getFixedProduct(), "Includes", topicId.toString()});
                 }
             }
-        } catch (final IOException ex) {
+        } catch (@NotNull final IOException ex) {
 
         }  finally {
             try {
                 if (writer != null) {
                     writer.close();
                 }
-            } catch (final IOException ex) {
+            } catch (@NotNull final IOException ex) {
 
             }
         }
